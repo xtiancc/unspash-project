@@ -1,0 +1,19 @@
+.cards-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr));
+}
+
+.cards-gallery > div {
+  overflow: hidden;
+}
+
+.cards-gallery > div > img {
+  height: 38rem;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.cards-gallery > div > img:hover {
+  transform: scale(1.2);
+}
